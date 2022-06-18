@@ -73,6 +73,38 @@
       }
     ]
   },
+  "19lou.com": {
+    "_name": "19 楼",
+    ".": [
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/bbs.html#19-lou-tou-tiao",
+        "source": [
+          "/"
+        ]
+      }
+    ],
+    "www": [
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/bbs.html#19-lou-tou-tiao",
+        "source": [
+          "/"
+        ],
+        "target": "/19lou/www"
+      }
+    ],
+    "jiaxing": [
+      {
+        "title": "头条",
+        "docs": "https://docs.rsshub.app/bbs.html#19-lou-tou-tiao",
+        "source": [
+          "/"
+        ],
+        "target": "/19lou/jiaxing"
+      }
+    ]
+  },
   "35photo.pro": {
     "_name": "35PHOTO",
     ".": [
@@ -1857,6 +1889,27 @@
       }
     ]
   },
+  "cnjxol.com": {
+    "_name": "南湖清风",
+    ".": [
+      {
+        "title": "嘉兴日报",
+        "docs": "https://docs.rsshub.app/traditional-media.html#nan-hu-qing-feng-jia-xing-ri-bao",
+        "source": [
+          "/"
+        ],
+        "target": "/cnjxol/jxrb/:id"
+      },
+      {
+        "title": "南湖晚报",
+        "docs": "https://docs.rsshub.app/traditional-media.html#nan-hu-qing-feng-nan-hu-wan-bao",
+        "source": [
+          "/"
+        ],
+        "target": "/cnjxol/nhwb/:id"
+      }
+    ]
+  },
   "cnki.net": {
     "_name": "中国知网",
     "navi": [
@@ -2180,6 +2233,32 @@
           "/r/:owner/:image/tags",
           "/_/:image"
         ]
+      }
+    ]
+  },
+  "domp4.cc": {
+    "_name": "domp4电影",
+    ".": [
+      {
+        "title": "最近更新",
+        "docs": "https://docs.rsshub.app/multimedia.html#domp4-ying-shi",
+        "source": [
+          "/",
+          "/custom/update.html"
+        ],
+        "target": "/domp4/latest/:type?"
+      },
+      {
+        "title": "剧集订阅",
+        "docs": "https://docs.rsshub.app/multimedia.html#domp4-ying-shi",
+        "source": "/html/:id",
+        "target": "/domp4/detail/:id"
+      },
+      {
+        "title": "剧集订阅",
+        "docs": "https://docs.rsshub.app/multimedia.html#domp4-ying-shi",
+        "source": "/detail/:id",
+        "target": "/domp4/detail/:id"
       }
     ]
   },
@@ -5138,12 +5217,12 @@
     "_name": "IEEE",
     "www": [
       {
-        "title": "latestVolume",
+        "title": "Journal",
         "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
         "source": "/*"
       },
       {
-        "title": "latestDate",
+        "title": "Recent",
         "docs": "https://docs.rsshub.app/journal.html#ieee-xplore",
         "source": "/*"
       }
@@ -5563,18 +5642,18 @@
     ]
   },
   "scitation.org": {
-    "_name": "JASA",
-    "asa": [
+    "_name": "scitation",
+    ".": [
       {
-        "title": "latest",
-        "docs": "https://docs.rsshub.app/journal.html#jasa",
-        "source": "/*",
-        "target": "/jasa/latest"
+        "title": "journal",
+        "docs": "https://docs.rsshub.app/journal.html#scitation",
+        "source": ":pub.scitation.org/toc/:jrn",
+        "target": "/scitation/:pub/:jrn"
       },
       {
         "title": "section",
-        "docs": "https://docs.rsshub.app/journal.html#jasa",
-        "source": "/*"
+        "docs": "https://docs.rsshub.app/journal.html#scitation",
+        "source": ":pub.scitation.org/toc/:jrn"
       }
     ]
   },
@@ -9573,6 +9652,17 @@
       }
     ]
   },
+  "springer.com": {
+    "_name": "Springer",
+    "www": [
+      {
+        "title": "latest",
+        "docs": "https://docs.rsshub.app/journal.html#Springer",
+        "source": "/journal/:journal/*",
+        "target": "/springer/journal/:journal"
+      }
+    ]
+  },
   "sputniknews.cn": {
     "_name": "俄罗斯卫星通讯社",
     ".": [
@@ -10017,6 +10107,27 @@
       }
     ]
   },
+  "techflow520.com": {
+    "_name": "深潮TechFlow",
+    ".": [
+      {
+        "title": "分类",
+        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-fen-lei",
+        "source": [
+          "/"
+        ],
+        "target": "/techflow520/:category?"
+      },
+      {
+        "title": "快讯",
+        "docs": "https://docs.rsshub.app/new-media.html#shen-chao-techflow-kuai-xun",
+        "source": [
+          "/newsflash"
+        ],
+        "target": "/techflow520/newsflash"
+      }
+    ]
+  },
   "t.me": {
     "_name": "Telegram",
     ".": [
@@ -10041,6 +10152,20 @@
         "docs": "https://docs.rsshub.app/social-media.html#telegram-telegram-blog",
         "source": "/blog",
         "target": "/telegram/blog"
+      }
+    ]
+  },
+  "tencent.com": {
+    "_name": "腾讯云",
+    ".": [
+      {
+        "title": "云+社区专栏",
+        "docs": "https://docs.rsshub.app/programming.html#teng-xun-yun-yun-she-qu-zhuan-lan",
+        "source": [
+          "/developer/column/:id",
+          "/developer/column/:id/:tag",
+          "/"
+        ]
       }
     ]
   },
